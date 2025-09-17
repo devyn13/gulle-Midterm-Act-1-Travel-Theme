@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>France | Island Travel Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+    <header class="navbar">
+    <div class="logo">Island*</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="countries.html" class="active">Countries</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="tips.html">Travel Tips</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Country Title -->
+  <section class="country-header">
+    <h1>France</h1>
+    <p>France enchants visitors with its world-famous landmarks, rich history, and exquisite cuisine.</p>
+  </section>
+
+  <!-- Wonders Section -->
+  <section class="wonders">
+    <div class="wonder-card">
+      <img src="images/eiffel.webp" alt="Eiffel Tower">
+      <h2>Eiffel Tower</h2>
+      <p>The Eiffel Tower is an iconic symbol of Paris and one of the most recognizable structures in the world.</p>
+      <button class="btn" onclick="toggleHotels('eiffel-hotels')">More Info</button>
+      <div class="hotels" id="eiffel-hotels" style="display:none;">
+        <ul>
+          <li><strong>Pullman Paris Tour Eiffel</strong> – 0.3 km away – ⭐ 4.5 – €350/night</li>
+          <li><strong>Shangri-La Paris</strong> – 0.6 km away – ⭐ 4.7 – €900/night</li>
+          <li><strong>Hotel La Comtesse</strong> – 0.8 km away – ⭐ 4.4 – €280/night</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wonder-card">
+      <img src="images/louvre.webp" alt="Louvre Museum">
+      <h2>Louvre Museum</h2>
+      <p>The Louvre is the world’s largest art museum and a historic monument in Paris, home to thousands of works including the Mona Lisa.</p>
+      <button class="btn" onclick="toggleHotels('louvre-hotels')">More Info</button>
+      <div class="hotels" id="louvre-hotels" style="display:none;">
+        <ul>
+          <li><strong>Hotel Regina Louvre</strong> – 0.2 km away – ⭐ 4.6 – €400/night</li>
+          <li><strong>La Clef Louvre Paris</strong> – 0.3 km away – ⭐ 4.5 – €350/night</li>
+          <li><strong>Hotel du Louvre</strong> – 0.1 km away – ⭐ 4.4 – €370/night</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wonder-card">
+      <img src="images/montsaintmichael.webp" alt="Mont Saint-Michel">
+      <h2>Mont Saint-Michel</h2>
+      <p>Mont Saint-Michel is a magical island topped by a gravity-defying abbey, one of France’s most stunning sights.</p>
+      <button class="btn" onclick="toggleHotels('mont-hotels')">More Info</button>
+      <div class="hotels" id="mont-hotels" style="display:none;">
+        <ul>
+          <li><strong>La Mère Poulard</strong> – 0.1 km away – ⭐ 4.1 – €180/night</li>
+          <li><strong>Le Relais Saint-Michel</strong> – 0.5 km away – ⭐ 4.0 – €200/night</li>
+          <li><strong>Hotel Gabriel</strong> – 2 km away – ⭐ 4.2 – €120/night</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Go Back Button -->
+  <div style="text-align: center; margin: 30px 0;">
+    <a href="countries.html" class="btn">← Go Back</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Lilianne Gulle | 20221131471</p>
+  </footer>
+
+  <script>
+    // Simple toggle for hotels section
+    function toggleHotels(id) {
+      var el = document.getElementById(id);
+      if (el.style.display === "none") {
+        el.style.display = "block";
+      } else {
+        el.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

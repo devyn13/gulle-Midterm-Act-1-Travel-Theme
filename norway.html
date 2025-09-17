@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norway | Island Travel Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">Island*</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="countries.html" class="active">Countries</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="tips.html">Travel Tips</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Country Title -->
+  <section class="country-header">
+    <h1>Norway</h1>
+    <p>Experience the magic of Norway, a land of dramatic fjords, majestic mountains, and the mesmerizing Northern Lights. </p>
+  </section>
+
+  <!-- Wonders Section -->
+  <section class="wonders">
+    <div class="wonder-card">
+      <img src="images/lofoten.jpg" alt="Mount Fuji">
+      <h2>Lofoten</h2>
+      <p>Lofoten is a place of contrasts. It’s a natural wonder with thriving local communities. It’s where mountains meet the sea, and where local businesses meet recreation.</p>
+      <button class="btn" onclick="toggleHotels('lofoten-hotels')">More Info</button>
+      <div class="hotels" id="lofoten-hotels" style="display:none;">
+        <ul>
+          <li><strong>Scandic Svolvær</strong> – 5 km away – ⭐ 4.2 – NOK 1,600/night</li>
+          <li><strong>Thon Hotel Lofoten</strong> – 6 km away – ⭐ 4.6 – NOK 1,900/night</li>
+          <li><strong>Nyvågar Rorbuhotell</strong> – 8 km away – ⭐ 4.5 – NOK 2,100/night</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wonder-card">
+      <img src="images/northen.webp" alt="Northern Lights">
+      <h2>Northern Lights</h2>
+      <p>The northern lights, also known as the aurora borealis, are one of nature's most spectacular displays.</p>
+      <button class="btn" onclick="toggleHotels('northern-hotels')">More Info</button>
+      <div class="hotels" id="northern-hotels" style="display:none;">
+        <ul>
+          <li><strong>Scandic Ishavshotel (Tromsø)</strong> – 0.5 km from city center – ⭐ 4.4 – NOK 2,000/night</li>
+          <li><strong>Clarion Hotel The Edge (Tromsø)</strong> – 0.7 km from city center – ⭐ 4.5 – NOK 2,200/night</li>
+          <li><strong>Radisson Blu Hotel Tromsø</strong> – 0.6 km from city center – ⭐ 4.3 – NOK 2,100/night</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wonder-card">
+      <img src="images/fjord.jpg" alt="Fjord View">
+      <h2>Fjord View</h2>
+      <p>Norway’s fjords are deep, narrow inlets surrounded by towering cliffs and lush landscapes, carved by glaciers over thousands of years.</p>
+      <button class="btn" onclick="toggleHotels('fjord-hotels')">More Info</button>
+      <div class="hotels" id="fjord-hotels" style="display:none;">
+        <ul>
+          <li><strong>Hotel Union Geiranger</strong> – 0.5 km from Geirangerfjord – ⭐ 4.5 – NOK 2,300/night</li>
+          <li><strong>Fretheim Hotel (Flåm)</strong> – 0.3 km from Aurlandsfjord – ⭐ 4.4 – NOK 2,000/night</li>
+          <li><strong>Flåmsbrygga Hotel</strong> – 0.2 km from Aurlandsfjord – ⭐ 4.3 – NOK 1,900/night</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Go Back Button -->
+  <div style="text-align: center; margin: 30px 0;">
+    <a href="countries.html" class="btn">← Go Back</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Lilianne Gulle | 20221131471</p>
+  </footer>
+
+  <script>
+    // Simple toggle for hotels section
+    function toggleHotels(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

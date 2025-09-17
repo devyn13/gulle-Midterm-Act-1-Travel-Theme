@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Tips | Island Travel Guide</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Travel Tips Container */
+    .tips-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    /* Flip Card Wrapper */
+    .flip-card {
+      background: transparent;
+      perspective: 1000px;
+    }
+
+    /* Inner Card */
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    /* Flip effect on hover */
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    /* Front & Back of Card */
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      backface-visibility: hidden;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flip-card-front {
+      background: #f0f8ff; /* soft pastel blue */
+      color: #333;
+    }
+
+    .flip-card-back {
+      background: #a7c7e7; /* darker pastel blue */
+      color: #fff;
+      transform: rotateY(180deg);
+    }
+
+    .flip-card h2 {
+      margin-bottom: 10px;
+    }
+
+    .flip-card p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">Island*</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="countries.html">Countries</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="tips.html" class="active">Travel Tips</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="country-header">
+    <h1>Travel Tips</h1>
+    <p>Practical advice to make your journey smoother, safer, and more enjoyable.</p>
+  </section>
+
+  <!-- Interactive Travel Tips -->
+  <section class="tips-container">
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h2>🧳 Pack Light</h2>
+          <p>Essentials only!</p>
+        </div>
+        <div class="flip-card-back">
+          <p>Bring versatile clothing, use packing cubes, and roll clothes to save space & avoid wrinkles.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h2>💳 Backup Documents</h2>
+          <p>Stay safe!</p>
+        </div>
+        <div class="flip-card-back">
+          <p>Always keep both digital & paper copies of your passport, ID, and travel insurance documents.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h2>🌍 Local Phrases</h2>
+          <p>Show respect!</p>
+        </div>
+        <div class="flip-card-back">
+          <p>Learning “Hello,” “Thank you,” and “Help” in the local language can build trust and friendships.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h2>🛡️ Safety First</h2>
+          <p>Be prepared!</p>
+        </div>
+        <div class="flip-card-back">
+          <p>Avoid displaying valuables, use hotel safes, and keep emergency contacts handy at all times.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h2>📅 Off-Peak Travel</h2>
+          <p>Smart timing!</p>
+        </div>
+        <div class="flip-card-back">
+          <p>Travel in spring or fall for cheaper prices, fewer tourists, and more authentic local experiences.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Lilianne Gulle | 20221131471</p>
+  </footer>
+
+</body>
+</html>

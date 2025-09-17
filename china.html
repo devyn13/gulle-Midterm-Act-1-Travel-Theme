@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>China | Island Travel Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">Island*</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="countries.html" class="active">Countries</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="tips.html">Travel Tips</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Country Title -->
+  <section class="country-header">
+    <h1>China</h1>
+    <p>From iconic landmarks to breathtaking natural wonders, it offers unforgettable experiences for every traveler.</p>
+  </section>
+
+  <!-- Wonders Section -->
+  <section class="wonders">
+    <div class="wonder-card">
+      <img src="images/greatwall.jpg" alt="Great Wall of China">
+      <h2>Great Wall of China</h2>
+      <p>The Great Wall stretches thousands of kilometers across northern China and is one of the world’s most famous historical sites.</p>
+      <button class="btn" onclick="toggleHotels('greatwall-hotels')">More Info</button>
+      <div class="hotels" id="greatwall-hotels" style="display:none;">
+        <ul>
+          <li><strong>Brickyard Retreat at Mutianyu Great Wall</strong> – 1 km away – ⭐ 4.7 – ¥1200/night</li>
+          <li><strong>Commune by the Great Wall</strong> – 2 km away – ⭐ 4.4 – ¥1500/night</li>
+          <li><strong>Home of the Great Wall</strong> – 1.5 km away – ⭐ 4.2 – ¥800/night</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wonder-card">
+      <img src="images/forbiddencity.jpg" alt="Forbidden City">
+      <h2>Forbidden City</h2>
+      <p>Located in Beijing, the Forbidden City is a magnificent palace complex that served as the home of emperors for centuries.</p>
+      <button class="btn" onclick="toggleHotels('forbidden-hotels')">More Info</button>
+      <div class="hotels" id="forbidden-hotels" style="display:none;">
+        <ul>
+          <li><strong>Hotel Kapok Beijing</strong> – 0.5 km away – ⭐ 4.3 – ¥900/night</li>
+          <li><strong>Beijing Hotel NUO</strong> – 1 km away – ⭐ 4.6 – ¥1300/night</li>
+          <li><strong>Sunworld Dynasty Hotel</strong> – 1.2 km away – ⭐ 4.2 – ¥850/night</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wonder-card">
+      <img src="images/zhangjiajie.jpg" alt="Zhangjiajie National Forest Park">
+      <h2>Zhangjiajie National Forest Park</h2>
+      <p>Famous for its towering sandstone pillars, Zhangjiajie inspired the floating mountains in the movie Avatar and offers breathtaking natural scenery.</p>
+      <button class="btn" onclick="toggleHotels('zhangjiajie-hotels')">More Info</button>
+      <div class="hotels" id="zhangjiajie-hotels" style="display:none;">
+        <ul>
+          <li><strong>Pullman Zhangjiajie Hotel</strong> – 2 km away – ⭐ 4.5 – ¥700/night</li>
+          <li><strong>Qinghe Jinjiang International Hotel</strong> – 3 km away – ⭐ 4.4 – ¥650/night</li>
+          <li><strong>Zhangjiajie Sunshine Hotel</strong> – 5 km away – ⭐ 4.3 – ¥600/night</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Go Back Button -->
+  <div style="text-align: center; margin: 30px 0;">
+    <a href="countries.html" class="btn">← Go Back</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Lilianne Gulle | 20221131471</p>
+  </footer>
+
+  <script>
+    // Simple toggle for hotels section
+    function toggleHotels(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

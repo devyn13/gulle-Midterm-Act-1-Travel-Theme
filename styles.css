@@ -1,0 +1,337 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #2d2d2d;
+  background-color: #fefefe;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 10%;
+  background: #cde7f0;  /* pastel blue */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #b0d6e8;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #245c72; /* darker pastel teal */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #245c72;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #f48fb1; /* pastel pink */
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: url("images/home-bg.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top:0; left:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 92, 114, 0.55); /* pastel teal overlay */
+}
+
+.hero-content {
+  position: relative;
+  max-width: 700px;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: #f48fb1; /* pastel pink button */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #f06292; /* slightly darker pink */
+}
+
+/* Introduction Section */
+.intro {
+  padding: 4rem 10%;
+  text-align: center;
+  background: #eaf6f9; /* light pastel blue background */
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #245c72;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #cde7f0; /* pastel blue */
+  color: #245c72;
+  margin-top: 2rem;
+  border-top: 2px solid #b0d6e8;
+}
+/* Countries Page */
+.countries {
+  padding: 4rem 10%;
+  text-align: center;
+}
+
+.countries h1 {
+  font-size: 2.5rem;
+  color: #245c72;
+  margin-bottom: 0.5rem;
+}
+
+.countries p {
+  color: #555;
+  margin-bottom: 2.5rem;
+}
+
+/* Grid Layout */
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+/* Country Card */
+.country-card {
+  background: #eaf6f9; /* light pastel blue */
+  border-radius: 18px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.country-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.country-card img {
+  width: 100%;
+  height: 220px; /* bigger images */
+  object-fit: cover;
+}
+
+.country-card h2 {
+  margin: 1.2rem;
+  font-size: 1.5rem;
+}
+
+.country-card a {
+  text-decoration: none;
+  color: #f48fb1; /* pastel pink links */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.country-card a:hover {
+  color: #f06292; /* darker pink */
+}
+
+
+/* Wonders Section */
+.wonders {
+  padding: 3rem 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.wonder-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.wonder-card:hover {
+  transform: translateY(-8px);
+}
+
+.wonder-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.wonder-card h2 {
+  margin: 1rem 0;
+  color: #245c72;
+}
+
+.wonder-card p {
+  color: #555;
+  padding: 0 1rem 1rem;
+}
+
+.wonder-card .btn {
+  margin-bottom: 1rem;
+  background: #f48fb1; /* pastel pink */
+}
+
+.hotels {
+  display: none;
+  background: #eaf6f9;
+  padding: 1rem;
+  border-top: 1px solid #cde7f0;
+  text-align: left;
+}
+
+.hotels ul {
+  list-style: none;
+}
+
+.hotels li {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+/* Blog Page Styling */
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  padding: 40px 10%;
+}
+
+.blog-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-content h2 {
+  font-size: 1.4rem;
+  color: #1e3d59; /* Deep pastel navy */
+  margin-bottom: 10px;
+}
+
+.blog-content .date {
+  font-size: 0.9rem;
+  color: #6c8ca3; /* Muted pastel blue-gray */
+  margin-bottom: 10px;
+  display: block;
+}
+
+.blog-content p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #468faf; /* Medium pastel blue */
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.read-more:hover {
+  color: #62b6cb; /* Lighter pastel aqua */
+}
+
+/* Section Header */
+.country-header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #a8dadc, #f1faee); /* Pastel blue + off-white */
+  border-bottom: 3px solid #468faf;
+}
+
+.country-header h1 {
+  font-size: 2.5rem;
+  color: #1e3d59;
+}
+
+.country-header p {
+  font-size: 1.1rem;
+  color: #2b4d66;
+  margin-top: 10px;
+}

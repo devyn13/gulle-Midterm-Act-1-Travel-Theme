@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greece | Island Travel Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">Island*</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="countries.html" class="active">Countries</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="tips.html">Travel Tips</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Country Title -->
+  <section class="country-header">
+    <h1>Greece</h1>
+    <p>Greece is a land of ancient history, stunning islands, and vibrant Mediterranean culture.</p>
+  </section>
+
+  <!-- Wonders Section -->
+  <section class="wonders">
+    <div class="wonder-card">
+      <img src="images/santorini.jpg" alt="Santorini">
+      <h2>Santorini</h2>
+      <p>Santorini, known since ancient times as Thira, is one of the most famous islands in the world.</p>
+      <button class="btn" onclick="toggleHotels('santorini-hotels')">More Info</button>
+      <div class="hotels" id="santorini-hotels" style="display:none;">
+        <ul>
+          <li><strong>Katikies Hotel</strong> – 0.5 km from Oia – ⭐ 4.8 – €450/night</li>
+          <li><strong>Astra Suites</strong> – 2 km from Fira – ⭐ 4.9 – €380/night</li>
+          <li><strong>Canaves Oia Suites</strong> – 0.6 km from Oia – ⭐ 4.7 – €500/night</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wonder-card">
+      <img src="images/olympus.avif" alt="Mount Olympus">
+      <h2>Mount Olympus</h2>
+      <p>In Greek mythology, Mount Olympus was regarded as the abode of the gods and the site of the throne of Zeus.</p>
+      <button class="btn" onclick="toggleHotels('olympus-hotels')">More Info</button>
+      <div class="hotels" id="olympus-hotels" style="display:none;">
+        <ul>
+          <li><strong>Litohoro Olympus Resort Villas & Spa</strong> – 4 km from Olympus – ⭐ 4.5 – €120/night</li>
+          <li><strong>Cavo Olympo Luxury Hotel</strong> – 7 km from Olympus – ⭐ 4.7 – €160/night</li>
+          <li><strong>Dion Palace Resort</strong> – 8 km from Olympus – ⭐ 4.3 – €110/night</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wonder-card">
+      <img src="images/temple.jpg" alt="Temple of Poseidon">
+      <h2>Temple of Poseidon</h2>
+      <p>The Temple of Poseidon is a must-visit for its historic ruins and scenic views of the Aegean Sea. </p>
+      <button class="btn" onclick="toggleHotels('poseidon-hotels')">More Info</button>
+      <div class="hotels" id="poseidon-hotels" style="display:none;">
+        <ul>
+          <li><strong>Aegeon Beach Hotel</strong> – 0.2 km from Temple – ⭐ 4.4 – €140/night</li>
+          <li><strong>Poseidon Beach Villas</strong> – 1 km from Temple – ⭐ 4.2 – €110/night</li>
+          <li><strong>Sounio Villas</strong> – 2 km from Temple – ⭐ 4.6 – €180/night</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Go Back Button -->
+  <div style="text-align: center; margin: 30px 0;">
+    <a href="countries.html" class="btn">← Go Back</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Lilianne Gulle | 20221131471</p>
+  </footer>
+
+  <script>
+    // Simple toggle for hotels section
+    function toggleHotels(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

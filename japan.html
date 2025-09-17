@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan | Island Travel Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">Island*</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="countries.html" class="active">Countries</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="tips.html">Travel Tips</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Country Title -->
+  <section class="country-header">
+    <h1>Japan</h1>
+    <p>Discover breathtaking wonders of Japan – from historic temples to modern marvels.</p>
+  </section>
+
+  <!-- Wonders Section -->
+  <section class="wonders">
+    <div class="wonder-card">
+      <img src="images/mt.fuji.avif" alt="Mount Fuji">
+      <h2>Mount Fuji</h2>
+      <p>Japan’s highest peak, a UNESCO World Heritage site, and a symbol of natural beauty.</p>
+      <button class="btn" onclick="toggleHotels('fuji-hotels')">More Info</button>
+      <div class="hotels" id="fuji-hotels">
+        <ul>
+          <li><strong>Fuji View Hotel</strong> – 5 km away – ⭐ 4.5 – $120/night</li>
+          <li><strong>Hotel Mystays Fuji</strong> – 7 km away – ⭐ 4.2 – $95/night</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wonder-card">
+      <img src="images/kiyo.webp" alt="Kiyomizu-dera Temple">
+      <h2>Kiyomizu-dera Temple</h2>
+      <p>A historic temple in Kyoto with a stunning wooden stage overlooking cherry blossoms.</p>
+      <button class="btn" onclick="toggleHotels('kyoto-hotels')">More Info</button>
+      <div class="hotels" id="kyoto-hotels">
+        <ul>
+          <li><strong>Kyoto Granbell Hotel</strong> – 1 km away – ⭐ 4.6 – $140/night</li>
+          <li><strong>Sakura Terrace</strong> – 2 km away – ⭐ 4.3 – $110/night</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wonder-card">
+      <img src="images/tokyo-tower.webp" alt="Tokyo Tower">
+      <h2>Tokyo Tower</h2>
+      <p>An iconic red tower in Tokyo offering panoramic city views and vibrant nightlife nearby.</p>
+      <button class="btn" onclick="toggleHotels('tokyo-hotels')">More Info</button>
+      <div class="hotels" id="tokyo-hotels">
+        <ul>
+          <li><strong>Park Hotel Tokyo</strong> – 2 km away – ⭐ 4.7 – $160/night</li>
+          <li><strong>Tokyo Prince Hotel</strong> – 1 km away – ⭐ 4.4 – $135/night</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Go Back Button -->
+  <div style="text-align: center; margin: 30px 0;">
+    <a href="countries.html" class="btn">← Go Back</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Lilianne Gulle | 20221131471</p>
+  </footer>
+
+  <script>
+    // Simple toggle for hotels section
+    function toggleHotels(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

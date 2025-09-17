@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switzerland | Island Travel Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">Island*</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="countries.html" class="active">Countries</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="tips.html">Travel Tips</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Country Title -->
+  <section class="country-header">
+    <h1>Switzerland</h1>
+    <p>Discover breathtaking wonders of Japan – from historic temples to modern marvels.</p>
+  </section>
+
+  <!-- Wonders Section -->
+  <section class="wonders">
+    <div class="wonder-card">
+      <img src="images/creux.avif" alt="Creux du Van">
+      <h2>Creux du Van</h2>
+      <p>a natural rock arena of immense proportions, is located at the border of the cantons of Neuenburg and Vaud. Impressive 160 meter high vertical rock faces surround a four kilometer long and over one kilometer wide valley basin..</p>
+      <button class="btn" onclick="toggleHotels('creux-hotels')">More Info</button>
+      <div class="hotels" id="creux-hotels" style="display:none;">
+        <ul>
+          <li><strong>Hotel-Restaurant de la Grand’Borne</strong> – 2.5 km away – ⭐ 4.3 – CHF 120/night</li>
+          <li><strong>Hôtel de la Truite, Champ-du-Moulin</strong> – 6 km away – ⭐ 4.2 – CHF 110/night</li>
+          <li><strong>Hotel-Restaurant Port Conty</strong> – 6.3 km away – ⭐ 4.2 – CHF 130/night</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wonder-card">
+      <img src="images/matterhorn.webp" alt="Kiyomizu-dera Temple">
+      <h2>Mt. Matterhorn</h2>
+      <p>Switzerland’s most famous landmark. 4478 meters high and with its characteristic pyramid-shaped silhouette, this is probably the most photographed mountain in the world. You will be amazed by this majestic peak – whether hiking, skiing or from the comfort of a viewpoint.</p>
+      <button class="btn" onclick="toggleHotels('matterhorn-hotels')">More Info</button>
+      <div class="hotels" id="matterhorn-hotels" style="display:none;">
+        <ul>
+          <li><strong>Hotel Matterhorn Focus</strong> – 0.5 km away – ⭐ 4.8 – CHF 250/night</li>
+          <li><strong>Hotel Alpenhof</strong> – 0.8 km away – ⭐ 4.7 – CHF 220/night</li>
+          <li><strong>Hotel Monte Rosa</strong> – 1 km away – ⭐ 4.6 – CHF 210/night</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wonder-card">
+      <img src="images/rhine.jpg" alt="Rhine Falls">
+      <h2>Rhine Falls</h2>
+      <p>Switzerland—the source of the Rhine, Rhone, and the Danube—is the water tower of Europe. It's a thunderous spectacle to hear, see, and feel hundreds of cubic feet of water per second come crashing down Europe's largest waterfall.</p>
+      <button class="btn" onclick="toggleHotels('rhine-hotels')">More Info</button>
+      <div class="hotels" id="rhine-hotels" style="display:none;">
+        <ul>
+          <li><strong>Hotel Rheinfall</strong> – 0.3 km away – ⭐ 4.1 – CHF 120/night</li>
+          <li><strong>Hotel2B</strong> – 0.8 km away – ⭐ 4.5 – CHF 140/night</li>
+          <li><strong>Best Western Plus Hotel Bahnhof</strong> – 1 km away – ⭐ 4.4 – CHF 150/night</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Go Back Button -->
+  <div style="text-align: center; margin: 30px 0;">
+    <a href="countries.html" class="btn">← Go Back</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Lilianne Gulle | 20221131471</p>
+  </footer>
+
+  <script>
+    // Simple toggle for hotels section
+    function toggleHotels(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
